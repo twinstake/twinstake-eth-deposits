@@ -1,0 +1,14 @@
+{
+    "pubkey": [
+        "0xac90050d2fa0e874979f7a87d0a1fe0d5c35e68977a6a7ab4718dd1c6ca4bae5835c3cd0f5e1e8e00bbcd7aa9d5c08c8"
+    ],
+    "withdrawal_credentials": [
+        "0x00f1bd92af2ba39a4d6d1839fff252051cf6c946fa916fd761d525a1d946dd00"
+    ],
+    "signatures": [
+        "0x87ce72df1344386d3bcef26c138384931dcb899c64dea5000a00284befc6acc32fcab66e59413041c9955c240763b79a0770c66e83ee6c1f52e1f1a0a3879be218c6ea0f5b8136afddd86f8bb013f63d16ee4fad7799d5d07dfc2746fd781640"
+    ],
+    "deposit_data_roots": [
+        "0x9c3d5a5e58890e0f3b1894f274e0cbea225da1a4744cf67351598426edbf06eb"
+    ]
+}
