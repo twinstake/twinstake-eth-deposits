@@ -49,3 +49,4 @@ This codebase has been internally reviewed by the Nethermind audit team and all 
 
 ## License
 
+GPL-3.0
