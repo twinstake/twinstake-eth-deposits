@@ -77,7 +77,7 @@ describe("ReceiveBatchDeposit: Store Deposit Data Function", function () {
   it("should fail for empty data storage", async function () {
     await expect(
       receiveDepositContract.connect(deployer).addDepositData(account2.address, [], [], [], []),
-    ).to.be.revertedWith("TwinStakeBatchDeposit: Failed comparison");
+    ).to.be.revertedWith("TwinstakeBatchDeposit: Failed comparison");
   });
 
   it("should save 100 validators at once", async function () {
@@ -191,7 +191,7 @@ describe("ReceiveBatchDeposit: Edit Function", function () {
           mockData.deposit_data_roots[0],
           1,
         ),
-    ).to.be.revertedWith("TwinStakeBatchDeposit: Failed comparison");
+    ).to.be.revertedWith("TwinstakeBatchDeposit: Failed comparison");
   });
 
   it("should edit the details successfully", async () => {
@@ -303,11 +303,11 @@ describe("ReceiveBatchDeposit: Delete Deposit Data Functions", function () {
     // delete more than present
     await expect(
       receiveDepositContract.deleteLastnDepositEntries(account2.address, data.pubkeys.length + 1),
-    ).to.be.revertedWith("TwinStakeBatchDeposit: Failed comparison");
+    ).to.be.revertedWith("TwinstakeBatchDeposit: Failed comparison");
 
     // delete 0 entries
     await expect(receiveDepositContract.deleteLastnDepositEntries(account2.address, 0)).to.be.revertedWith(
-      "TwinStakeBatchDeposit: Failed comparison",
+      "TwinstakeBatchDeposit: Failed comparison",
     );
   });
 
@@ -433,7 +433,7 @@ describe("ReceiveBatchDeposit: Deposit Function", function () {
         to: receiveDepositContract.address,
         value: ethers.utils.parseEther("30"),
       }),
-    ).to.be.revertedWith("TwinStakeBatchDeposit: the amount of ETH does not match the amount of nodes");
+    ).to.be.revertedWith("TwinstakeBatchDeposit: the amount of ETH does not match the amount of nodes");
   });
 
   it("Should revert if contract is paused", async () => {
